@@ -33,6 +33,9 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      color-adjust: exact !important;
     }
 
     body {
@@ -490,18 +493,56 @@
 
     /* Print Setup */
     @media print {
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+      }
       body {
-        background: transparent;
-        padding-bottom: 0;
+        background: transparent !important;
+        padding-bottom: 0 !important;
       }
       .no-print, .hud-wrapper, .toolbar {
         display: none !important;
       }
       .page {
-        margin: 0;
-        box-shadow: none;
-        width: 100%;
-        min-height: auto;
+        margin: 0 !important;
+        box-shadow: none !important;
+        width: 100% !important;
+        min-height: auto !important;
+      }
+      .header {
+        background: #0f172a !important;
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+        color: #ffffff !important;
+      }
+      .header-left h1 {
+        color: #ffffff !important;
+      }
+      .header-left .title {
+        color: #93c5fd !important;
+      }
+      .sidebar {
+        background-color: #f8fafc !important;
+      }
+      .working-style {
+        background-color: #eff6ff !important;
+      }
+      .job-dates {
+        background: #eff6ff !important;
+        color: #2563eb !important;
+      }
+      .job-company span.client {
+        background: #ecfdf5 !important;
+        color: #047857 !important;
+      }
+      .pill.highlight {
+        background: #eff6ff !important;
+        color: #1d4ed8 !important;
+      }
+      .pill.strong {
+        background: #f0fdf4 !important;
+        color: #15803d !important;
       }
     }
 
