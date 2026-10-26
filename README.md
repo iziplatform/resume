@@ -2,7 +2,7 @@
 
 Interactive, modern, and printable Curriculum Vitae for **Rodolfo Siqueira** (Senior Cloud Platform & DevOps Consultant).
 
-Hosted with **GitHub Pages**: [https://siqueirabrodolfo.github.io/cv/](https://siqueirabrodolfo.github.io/cv/) *(or your custom repository URL)*.
+Hosted with **GitHub Pages**: [https://iziplatform.github.io/resume/](https://iziplatform.github.io/resume/).
 
 ## Features
 - **A4 Vector Print Ready:** Features a floating `Download PDF / Print` button utilizing native browser print rasterization to output a pixel-perfect, vector PDF without layout glitches.
